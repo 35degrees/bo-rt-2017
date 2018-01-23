@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Cabin:300,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bostyle2.css">
+  <title>2017 Box Office</title>
+</head>
+<body>
+
+  <div class="container1 transform" id="container1">
+    <div class="split top">
+      <h1>Box Office 2017</h1>
+      <h5 id="tweet"><i>"Fans LOVE the movie. Critics HATE it. What a glaring disconnect. People just want to laugh & have fun.”</i> - <a href="https://twitter.com/TheRock/status/867742614375854081" target="_blank">The Rock</a> on "Baywatch"</h5>
+
+      <h5 id="article">In 2017, audiences sided with critics, as movies certified "fresh" on Rotten Tomatoes took home more than half of the annual box office. To see a movie at the theater, audiences want to know they are going to enjoy themselves, especially with so many good, low-cost entertainment options at home.
+      <br/>
+      <br/>
+      52% of the total $10.4 billion domestic box office take of films released in 2017 were from movies that scored 75 or higher on Rotten Tomatoes! Not only that, movies ranked 60 or higher took home over 2/3rd’s of ticket sales (about $7 billion), while the movies ranked below 60 were left with less, a 1/3 share of the pie (a $3.4 billion take).
+      <br/>
+      <br/>
+      57 of the 150 domestic releases that grossed $5m or more were rated “fresh", and the average movie released in 2017 scored a 57.3.
+      <br/>
+      <br/>
+      As you’ll see behind the curtain, Disney continued to dominate the box office in 2017 with high-ranked movies made from known properties like Marvel, Star Wars, and in-house re-makes. Warner Bros. hit several home runs with known properties like “It”, and scored the biggest take from an non-sequel, non-remake in “Dunkirk”.</h5>
+
+
+      <a href="#" onclick="openCurtain()" class="button" id="fadebutton">Open curtain</a>
+    </div>
+  </div>
+ 
+  <div class="container2" id="container2">
+    
+      <div id="toolbar">
+        <h2>2017 Domestic Box Office Totals</h2>
+          <a href="#" id="all" class="button2 active">All Films ($5m+ gross)</a>
+          <a href="#" id="year" class="button2">Rotten Tomatoes Scores</a>
+          <a href="#" id="studiob" class="button2">Studios</a>
+        </div>
+        <div id="vis"></div>
+        <div id="split"></div>
+      </div>
+
+
+
+
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+  <script src="js/bo2.js"></script>
+  
+</body>
+</html>
