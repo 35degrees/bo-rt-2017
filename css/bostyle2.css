@@ -54,7 +54,7 @@ html, body {
   color: #fff;
   position: absolute;
   left: 50%;
-  top: 12%;
+  top: 8%;
   transform: translateX(-50%);
   white-space: nowrap;
   
@@ -100,7 +100,7 @@ h3 {
   color:lightgrey;
   position: absolute;
   left: 50%;
-  top: 23%;
+  top: 18%;
   width: 72%;
   transform: translateX(-50%);
  text-align: center;
@@ -112,11 +112,11 @@ h3 {
   color: #fff;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 25%;
   width: 72%;
   transform: translateX(-50%);
  text-align: center;
- line-height: 1.65rem;
+ line-height: 1.4rem;
   
 }
 .top {
@@ -125,6 +125,10 @@ h3 {
   height: 100%;
   overflow: hidden;
   background-color: rgba(233,39,39,0.3);
+}
+.top > #article{
+height: 55vh;
+
 }
 
 .transform {
