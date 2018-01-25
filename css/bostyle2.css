@@ -1,0 +1,279 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 88%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: all .2s;
+}
+
+
+#split::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 40%;
+  background-color: rgba(2, 8, 29, 0.637);
+}
+
+
+
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 95%;
+  top: -8%;
+  background: rgba(248, 165, 165, 0.3);
+  z-index: 1000;
+  background: url('http://samhooker.com/bo2017/curtain2.jpg') center center no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+
+.container1 h1 {
+  font-family: Cabin, sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  
+}
+
+#container2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(169, 187, 250, 0.247);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container2 h1 {
+
+  font-size: 2rem;
+  color: midnightblue;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+h2 {
+  color: steelblue;
+  margin-top: -0.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  width: 70%;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%)
+  text-align: center;
+  display: block;
+  color: midnightblue;
+  position: absolute;
+  transform: translateX(-50%);
+}
+#tweet {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  color:lightgrey;
+  position: absolute;
+  left: 50%;
+  top: 23%;
+  width: 72%;
+  transform: translateX(-50%);
+ text-align: center;
+  
+}
+#article {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 72%;
+  transform: translateX(-50%);
+ text-align: center;
+ line-height: 1.65rem;
+  
+}
+.top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(233,39,39,0.3);
+}
+
+.transform {
+transition: all 4.5s -webkit-cubic-bezier(.31,0,.84,1);
+transition: all 4.5s cubic-bezier(.31,-0.31,.84,1.36);
+animation-delay: 0.5s; 
+}
+
+.transform-active {
+  top: -100rem;
+}
+
+@media (max-width: 960px) {
+  .container1 h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+    top: 10%;
+  }
+  #tweet, #article {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    width: 78%;
+  }
+  #tweet {
+    top: 16%;
+  }
+  #article {
+    top: 24%
+  }
+  
+  .button {
+    top: 93%;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 660px) {
+  .container1 h1 {
+    font-size: 1.6rem;
+    top: 8%;
+  }
+  #tweet, #article {
+    font-size: 0.75rem;
+    line-height: 0.93rem;
+  }
+  #tweet {
+    top: 12%;
+  }
+  #article {
+    top: 20%
+  }
+  .sizingSvg {
+    width: 100vw;
+  }
+}
+
+/* svg */
+
+svg {
+position: relative;
+  display: block;
+  background-color:transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -0.5rem
+  }
+
+  a, a:visited, a:active {
+    color: LightGrey;
+  }
+
+
+
+  .button2 {
+    min-width: 8rem;
+    padding: 4px 5px;
+    cursor: pointer;
+    margin: auto;
+    font-size: 13px;
+    border: 1px solid LightSteelBlue;
+    text-decoration: none;
+    font-family: Lato;
+    display: inline-block;
+    float: center;
+    margin: 3px;
+    border-radius: 8px;
+    background-color: SteelBlue;
+  }
+
+  .button2.active {
+    background: LightGrey;
+    color: SteelBlue;
+  }
+
+  #vis {
+    clear: both;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto;
+  }
+  
+  #toolbar {
+    font-family: Lato;
+    color: LightSteelBlue;
+    display: block;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 2rem 2rem;
+    text-transform: uppercase;
+  }
+  
+  .year {
+    font-size: 21px;
+    fill: #aaa;
+    cursor: default;
+  }
+  .tooltip {
+          background-color: MidnightBlue;
+          padding: .5em;
+         font-family: Lato;
+          font-size: 12px;
+          color: #fff;
+          font-weight: bolder;
+          border-radius: 6px;
+          opacity: 0.2;
+          position: absolute;
+          text-align: center;
+          margin-top: 20px;
+        line-height: 1.3em;
+      }
+  
+  .tooltip .title {
+    font-size: 16px;
+    color: GhostWhite;
+    opacity: 1;
+  }
+  /* #init {
+    clear: both;
+    display: visible;
+    position: absolute;
+    padding: 5px;
+    z-index: 1;
+    margin-left: 8px;
+  }
+  #init2 {
+    position: absolute;
+    padding: 7px;
+    margin-left: 8px;
+  } */
