@@ -12,15 +12,16 @@ html, body {
   display: block;
   position: absolute;
   left: 50%;
-  top: 88%;
+  top: 89%;
   transform: translateX(-50%);
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
-  padding: 1rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   text-transform: uppercase;
   border-radius: 10px;
   transition: all .2s;
+  font-size: 0.9rem;
 }
 
 
